@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.github.nscala-time</groupId>
+    <artifactId>nscala-time_2.12</artifactId>
+    <packaging>jar</packaging>
+    <description>nscala-time</description>
+    <version>2.22.0</version>
+    <name>nscala-time</name>
+    <organization>
+        <name>com.github.nscala-time</name>
+    </organization>
+    <url>https://github.com/nscala-time/nscala-time</url>
+    <licenses>
+        <license>
+            <name>Apache</name>
+            <url>http://www.opensource.org/licenses/Apache-2.0</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <scm>
+        <url>git@github.com:nscala-time/nscala-time.git</url>
+        <connection>scm:git:git@github.com:nscala-time/nscala-time.git</connection>
+    </scm>
+    <developers>
+        <developer>
+            <id>kmizu</id>
+            <name>Kota Mizushima</name>
+            <url>https://github.com/kmizu</url>
+        </developer>
+    </developers>
+    <dependencies>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>2.12.8</version>
+        </dependency>
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>2.10.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.joda</groupId>
+            <artifactId>joda-convert</artifactId>
+            <version>2.2.0</version>
+        </dependency>
+    </dependencies>
+</project>

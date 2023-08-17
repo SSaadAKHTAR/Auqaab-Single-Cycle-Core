@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>edu.berkeley.cs</groupId>
+    <artifactId>chisel3-macros_2.12</artifactId>
+    <packaging>jar</packaging>
+    <description>chisel3-macros</description>
+    <version>3.4.3</version>
+    <name>chisel3-macros</name>
+    <organization>
+        <name>edu.berkeley.cs</name>
+    </organization>
+    <scm>
+        <url>https://github.com/freechipsproject/chisel3</url>
+        <connection>scm:git:https://github.com/freechipsproject/chisel3.git</connection>
+        <developerConnection>scm:git:git@github.com:freechipsproject/chisel3.git</developerConnection>
+    </scm>
+    <url>http://chisel.eecs.berkeley.edu/</url>
+    <licenses>
+        <license>
+            <name>apache-v2</name>
+            <url>https://opensource.org/licenses/Apache-2.0</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <id>jackbackrack</id>
+            <name>Jonathan Bachrach</name>
+            <url>http://www.eecs.berkeley.edu/~jrb/</url>
+        </developer>
+    </developers>
+    <dependencies>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>2.12.12</version>
+        </dependency>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-reflect</artifactId>
+            <version>2.12.12</version>
+        </dependency>
+    </dependencies>
+</project>

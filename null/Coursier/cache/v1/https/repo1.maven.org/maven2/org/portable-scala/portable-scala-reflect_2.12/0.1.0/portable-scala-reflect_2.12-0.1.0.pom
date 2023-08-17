@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.portable-scala</groupId>
+    <artifactId>portable-scala-reflect_2.12</artifactId>
+    <packaging>jar</packaging>
+    <description>portable-scala-reflect</description>
+    <url>https://github.com/portable-scala/portable-scala-reflect</url>
+    <version>0.1.0</version>
+    <licenses>
+        <license>
+            <name>BSD New</name>
+            <url>https://github.com/portable-scala/portable-scala-reflect/blob/master/LICENSE</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <name>portable-scala-reflect</name>
+    <organization>
+        <name>org.portable-scala</name>
+        <url>https://github.com/portable-scala/portable-scala-reflect</url>
+    </organization>
+    <scm>
+        <url>https://github.com/portable-scala/portable-scala-reflect</url>
+        <connection>scm:git:git@github.com:portable-scala/portable-scala-reflect.git</connection>
+        <developerConnection>scm:git:git@github.com:portable-scala/portable-scala-reflect.git</developerConnection>
+    </scm>
+    <developers>
+        <developer>
+            <id>sjrd</id>
+            <name>Sébastien Doeraene</name>
+            <url>https://github.com/sjrd/</url>
+        </developer>
+        <developer>
+            <id>gzm0</id>
+            <name>Tobias Schlatter</name>
+            <url>https://github.com/gzm0/</url>
+        </developer>
+        <developer>
+            <id>densh</id>
+            <name>Denys Shabalin</name>
+            <url>https://github.com/densh/</url>
+        </developer>
+    </developers>
+    <dependencies>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>2.12.6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-reflect</artifactId>
+            <version>2.12.6</version>
+        </dependency>
+        <dependency>
+            <groupId>com.novocode</groupId>
+            <artifactId>junit-interface</artifactId>
+            <version>0.11</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>

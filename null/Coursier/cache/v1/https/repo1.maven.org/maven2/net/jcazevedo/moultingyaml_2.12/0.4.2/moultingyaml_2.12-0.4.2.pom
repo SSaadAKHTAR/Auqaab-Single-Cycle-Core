@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>net.jcazevedo</groupId>
+    <artifactId>moultingyaml_2.12</artifactId>
+    <packaging>jar</packaging>
+    <description>moultingyaml</description>
+    <url>https://github.com/jcazevedo/moultingyaml</url>
+    <version>0.4.2</version>
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <name>moultingyaml</name>
+    <organization>
+        <name>net.jcazevedo</name>
+        <url>https://github.com/jcazevedo/moultingyaml</url>
+    </organization>
+    <scm>
+        <url>https://github.com/jcazevedo/moultingyaml.git</url>
+        <connection>scm:git:git@github.com:jcazevedo/moultingyaml.git</connection>
+    </scm>
+    <developers>
+        <developer>
+            <id>jcazevedo</id>
+            <name>Joao Azevedo</name>
+            <url>http://jcazevedo.net</url>
+        </developer>
+    </developers>
+    <dependencies>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>2.12.8</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.nscala-time</groupId>
+            <artifactId>nscala-time_2.12</artifactId>
+            <version>2.22.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-reflect</artifactId>
+            <version>2.12.8</version>
+        </dependency>
+        <dependency>
+            <groupId>org.yaml</groupId>
+            <artifactId>snakeyaml</artifactId>
+            <version>1.26</version>
+        </dependency>
+        <dependency>
+            <groupId>org.scalatest</groupId>
+            <artifactId>scalatest_2.12</artifactId>
+            <version>3.0.8</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>
