@@ -4,7 +4,7 @@ import chisel3 . util . _
 import java . io . File
 class Task2() extends Module {
 val io = IO (new Bundle {
-// val data_in = Input ( UInt ( n . W ) )
+// val data_in = Input ( UInt ( n . W ) 
 val reload = Output ( Bool () )
 // val out = Output ( Bool () )
 })

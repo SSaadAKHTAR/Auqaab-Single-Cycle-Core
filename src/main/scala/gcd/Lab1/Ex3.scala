@@ -21,6 +21,6 @@ count
 val counter1 = genCounter ( size , maxValue )
 io . result := counter1 ( size -1)
 
-// println (( new chisel3 . stage . ChiselStage ) . emitVerilog (new Counter (8 , 255. U ) ) )
+//println (( new chisel3 . stage . ChiselStage ) . emitVerilog (new Counter (8 , 255. U ) ) )
 }
 

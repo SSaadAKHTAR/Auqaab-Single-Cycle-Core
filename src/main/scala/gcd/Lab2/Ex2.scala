@@ -1,6 +1,6 @@
 package Lab2
-import chisel3 . _
-import chisel3 . util . _
+import chisel3._
+import chisel3.util._
 class MuxLookup extends Module {
 val io = IO (new Bundle {
 val in0 = Input ( Bool () )
