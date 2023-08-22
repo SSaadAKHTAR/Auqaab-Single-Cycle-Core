@@ -10,29 +10,29 @@ val out = Vec (4 , Output ( Bool () ) )
 })
 val sb=Cat (io.sel(1),io.sel(0)).asUInt
 io.out(0):= MuxLookup(sb,false.B,Array(
-(0. U ) -> io . in(0) ,
-(1. U ) -> io . in(1) ,
-(2. U ) -> io . in(2) ,
-(3. U ) -> io . in(3)
+    (0. U ) -> io . in(0) ,
+    (1. U ) -> io . in(1) ,
+    (2. U ) -> io . in(2) ,
+    (3. U ) -> io . in(3)
 )
 )
 io.out(1):= MuxLookup(sb,false.B,Array(
     (0. U ) -> io . in(1) ,
-(1. U ) -> io . in(2) ,
-(2. U ) -> io . in(3) ,
-(3. U ) -> Mux(io.shift_type,io.in(0),0.U)
+    (1. U ) -> io . in(2) ,
+    (2. U ) -> io . in(3) ,
+    (3. U ) -> Mux(io.shift_type,io.in(0),0.U)
 ))
 io.out(2):= MuxLookup(sb,false.B,Array(
     (0. U ) -> io.in(2),
-(1. U ) -> io . in(3) ,
-(2. U ) -> Mux(io.shift_type,io.in(0),0.U) ,
-(3. U ) -> Mux(io.shift_type,io.in(1),0.U)
+    (1. U ) -> io . in(3) ,
+    (2. U ) -> Mux(io.shift_type,io.in(0),0.U) ,
+    (3. U ) -> Mux(io.shift_type,io.in(1),0.U)
 ))
 io.out(3):= MuxLookup(sb,false.B,Array(
     (0. U ) -> io.in(3),
-(1. U ) -> Mux(io.shift_type,io.in(0),0.U) ,
-(2. U ) -> Mux(io.shift_type,io.in(1),0.U) ,
-(3. U ) -> Mux(io.shift_type,io.in(2),0.U)
+    (1. U ) -> Mux(io.shift_type,io.in(0),0.U) ,
+    (2. U ) -> Mux(io.shift_type,io.in(1),0.U) ,
+    (3. U ) -> Mux(io.shift_type,io.in(2),0.U)
 ))
 
 

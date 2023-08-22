@@ -79,24 +79,14 @@ when (count===9.U){
     .elsewhen(count===5.U){
         io.mem_rd:=0.B
         io.load_ir:=0.B
-        when(io.op_code===0.U){
-            io.halt:=1.B
-        }
-        .otherwise{
-            io.halt:=0.B
-        }
+        io.halt:=(io.op_code===0.U)
         io.inc_pc:=1.B
         io.load_ac:=0.B
         io.load_pc:=0.B
         io.mem_wr:=0.B
     }
      .elsewhen(count===6.U){
-         when(io.op_code===2.U||io.op_code===3.U||io.op_code===4.U||io.op_code===5.U){
-            io.mem_rd:=1.B
-         }
-         .otherwise{
-            io.mem_rd:=0.B
-         }
+        io.mem_rd:=(io.op_code===2.U||io.op_code===3.U||io.op_code===4.U||io.op_code===5.U)
         io.load_ir:=0.B
         io.halt:=0.B
         io.inc_pc:=0.B
@@ -106,70 +96,31 @@ when (count===9.U){
     
     }
     .elsewhen(count===7.U){
-         when(io.op_code===2.U||io.op_code===3.U||io.op_code===4.U||io.op_code===5.U){
-            io.mem_rd:=1.B
-         }
-         .otherwise{
-            io.mem_rd:=0.B
-         }
+         io.mem_rd:=(io.op_code===2.U||io.op_code===3.U||io.op_code===4.U||io.op_code===5.U)
         io.load_ir:=0.B
         io.halt:=0.B
-        when(io.op_code===1.U && io.zero===1.U){
-            io.inc_pc:=1.B
-        }
-        .otherwise{
-            io.inc_pc:=0.B
-        }
-        when(io.op_code===2.U||io.op_code===3.U||io.op_code===4.U||io.op_code===5.U){
-            io.load_ac:=1.B
-         }
-         .otherwise{
-            io.load_ac:=0.B
-         }
-        when(io.op_code===7.U){
-            io.load_pc:=1.B
-        }
-        .otherwise{
-            io.load_pc:=0.B
-        }
+       io.inc_pc:=(io.op_code===1.U&&io.zero===1.B)
+
+      io.load_ac:=(io.op_code===2.U||io.op_code===3.U||io.op_code===4.U||io.op_code===5.U)
+
+       io.load_pc:=(io.op_code===7.U)
+
         io.mem_wr:=0.B
     
     }
     
     .elsewhen(count===8.U){
-         when(io.op_code===2.U||io.op_code===3.U||io.op_code===4.U||io.op_code===5.U){
-            io.mem_rd:=1.B
-         }
-         .otherwise{
-            io.mem_rd:=0.B
-         }
+       io.mem_rd:=(io.op_code===2.U||io.op_code===3.U||io.op_code===4.U||io.op_code===5.U)
+
         io.load_ir:=0.B
         io.halt:=0.B
-        when(io.op_code===7.U){
-            io.inc_pc:=1.B
-        }
-        .otherwise{
-            io.inc_pc:=0.B
-        }
-         when(io.op_code===2.U||io.op_code===3.U||io.op_code===4.U||io.op_code===5.U){
-            io.load_ac:=1.B
-         }
-         .otherwise{
-            io.load_ac:=0.B
-         }
-          when(io.op_code===7.U){
-            io.load_pc:=1.B
-        }
-        .otherwise{
-            io.load_pc:=0.B
-        }
+        io.inc_pc:=(io.op_code===7.U)
+
+        io.load_ac:=(io.op_code===2.U||io.op_code===3.U||io.op_code===4.U||io.op_code===5.U)
+
+        io.load_pc:=(io.op_code===7.U)
         
-        when(io.op_code===6.U){
-            io.mem_wr:=1.B
-        }
-        .otherwise{
-            io.mem_wr:=0.B
-        }
+       io.mem_wr:=(io.op_code===6.U)
     
     }
     
@@ -179,5 +130,4 @@ when (count===9.U){
 }
 
 count:=count+1.U
-
 }

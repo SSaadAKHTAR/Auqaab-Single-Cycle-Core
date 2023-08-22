@@ -10,7 +10,7 @@ class controllerTester extends FreeSpec with ChiselScalatestTester {
     test(new controller) { b =>
      b.io.op_code.poke(0.U)
      b.io.zero.poke(0.B)
-    b.io.rst.poke(1.B)
+    b.io.rst.poke(0.B)
     b.io.mem_rd.expect(1.B)
     b.io.load_ir.expect(0.B)
     b.io.halt.expect(0.B)

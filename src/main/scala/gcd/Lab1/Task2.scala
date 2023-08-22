@@ -9,20 +9,25 @@ val reload = Output ( Bool () )
 
 })
 val counter = RegInit (0. U(4.W)  )
-val max_count = RegInit (6. U (4.W) )
-io.reload:=0.B
-when(io.reload) {
-counter := counter - 1.U
+val max_count = RegInit (4. U (4.W) )
+
+val relode = RegInit(false.B)
+
+when(relode){
+counter := counter - 1.U 
+ 
 }
 .otherwise{
-counter := counter + 1.U
-} 
-when(counter === max_count) {
-io.reload := 1.B
-
+counter := counter + 1.U 
+}
+when(counter===max_count){
+   io.reload:=1.B
+   relode := 1.B
 }
 .otherwise{
-
-io.reload := 0.B
+    io.reload:=0.B
 }
+
+
+
 }
