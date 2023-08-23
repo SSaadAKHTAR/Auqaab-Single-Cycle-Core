@@ -5,10 +5,10 @@ import org.scalatest._
 import chiseltest._
 import chiseltest.experimental.TestOptionBuilder . _
 import scala.util.Random
-import ALUOP1._
-class TestALU  extends FreeSpec with ChiselScalatestTester {
+import ALUOP._
+class TaskTester  extends FreeSpec with ChiselScalatestTester {
 "ALU Test" in {
-test ( new ALU ) { c =>
+test ( new ALU3 ) { c =>
 // ALU operations
 val array_op = Array ( ALU_ADD , ALU_SUB , ALU_AND , ALU_OR , ALU_XOR , ALU_SLT ,
 ALU_SLL , ALU_SLTU , ALU_SRL , ALU_SRA , ALU_COPY_A , ALU_COPY_B , ALU_XXX )
@@ -63,6 +63,8 @@ c . clock . step (2)
 }
 }
 }
+
+
 
 
 

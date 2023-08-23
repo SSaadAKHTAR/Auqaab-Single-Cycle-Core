@@ -3,7 +3,7 @@ package Lab4
 import chisel3._ 
 import chisel3.util._ 
 
-object ALUOP {
+object ALUOP1 {
     val ALU_ADD = 0.U(4.W)
     val ALU_SUB = 1.U(4.W)
     val ALU_AND = 2.U(4.W)
@@ -19,15 +19,15 @@ object ALUOP {
     val ALU_XXX = 12.U(4.W) 
 }
 
-trait Config{
+trait Config1{
     val WLEN = 32
     val XLEN = 32
     val ALUOP_SIG_LEN = 4
 }
 
-import ALUOP._
+import ALUOP1._
 
-class ALUIO extends Bundle with Config {
+class ALUIO1 extends Bundle with Config {
     val in_A = Input(UInt(WLEN.W))
     val in_B = Input(UInt(WLEN.W))
     val alu_Op = Input(UInt(ALUOP_SIG_LEN.W))
@@ -35,8 +35,8 @@ class ALUIO extends Bundle with Config {
     val sum = Output(UInt(WLEN.W))
 }
 
-class ALU extends Module with Config {
-    val io = IO(new ALUIO)
+class ALU extends Module with Config1 {
+    val io = IO(new ALUIO1)
 
 // class ALU extends Module with Config {
 val sum = io . in_A + Mux( io . alu_Op (0) , (-io .in_B) , io.in_B )
@@ -96,7 +96,6 @@ switch ( io. alu_Op ){
      is (ALU_COPY_B){
         io.out:=io . in_B
     }
-
 
 
 }

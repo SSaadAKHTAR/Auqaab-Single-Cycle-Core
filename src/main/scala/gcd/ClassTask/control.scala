@@ -1,5 +1,5 @@
 package ClassTask
-import chisel3 . _
+import chisel3._
 import chisel3.util._
 
 class control extends Module {
