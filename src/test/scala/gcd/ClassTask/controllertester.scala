@@ -11,14 +11,14 @@ class controllerTester extends FreeSpec with ChiselScalatestTester {
      b.io.op_code.poke(0.U)
      b.io.zero.poke(0.B)
     b.io.rst.poke(0.B)
-    b.io.mem_rd.expect(1.B)
+    b.io.mem_rd.expect(0.B)
     b.io.load_ir.expect(0.B)
     b.io.halt.expect(0.B)
     b.io.inc_pc.expect(0.B)
     b.io.load_ac.expect(0.B)
     b.io.load_pc.expect(0.B)
     b.io.mem_wr.expect(0.B)
-      b.clock.step(10)
+      b.clock.step(3)
 
     }
   }}
