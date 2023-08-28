@@ -8,47 +8,70 @@ class TxModule extends Module {
   val io = IO(new Bundle {
     val tx = Input(Bool())
     val ready = Input(Bool())
+    //val reset = Input(Bool())
     val valid = Output(Bool())
     val data = Output(UInt(8.W))
+    // val out = Output(UInt(8.W))  
   })
 
-   val idle :: tx :: valid :: Nil = Enum(3)
+   val idle :: tx :: vld :: Nil = Enum(3)
+  //  val idle = 0.U
+  //  val tx = 1.U
+  //  val vld =2.U
+  
 
   val state = RegInit(idle)
 
-  val dataReg = Reg(UInt(8.W))
-  val sendData = RegInit(false.B)
+  // io.valid := 0.B
+  // io.data := 0.B
+
+  val dataReg = RegInit(0.U(8.W))
+  // val sendData = RegInit(false.B)
+  var validReg = RegInit(0.B)
   
 //   val sendDataValid = RegInit(false.B)
   // io.valid:= false.B
 
   switch(state){
     is(idle){
-      when(~reset.asUInt()(0)) {
+      //when(~io.reset.asUInt()(0)) {
          state := tx
-      }
-      is(tx){
-        when(io.tx===0.B){
+         printf(p"state in idle : $state\n")
+      //}
+    }
+      
+    is(tx){
+      when(io.tx){
+          state := vld
+          validReg:= 1.B
           dataReg:=0.U
+          printf(p"state in tx = 1 == valid : $state\n")
+          
+
         }
-        when(io.tx===1.B){
-          io.valid:= 1.B
+        .otherwise{
           dataReg:=0.U
-          state:= valid
+          state := tx
+          printf(p"state in tx : $state\n")
+          printf("io.tx = 0 \n")
         }
       }
 
-      is(valid){
-        when(io.valid===1.B && io.ready===1.B){
+    is(vld){
+        when(io.valid ===1.B && io.ready===1.B){
            dataReg:=4.U
            state := tx
-           io.valid:=0.B
+           validReg:=0.B
+        }
+        .otherwise{
+          state:=vld
+           validReg:=1.B 
         }
       }
 
     }
-
-
+    io.valid:=validReg
+    io.data := dataReg
 
   }
   
@@ -76,56 +99,56 @@ class TxModule extends Module {
   // }
 
   
-   io.data := dataReg
+   
 
 //   when(state === tx) {
 //     sendDataValid := io.tx
 //   }.otherwise {
 //     sendDataValid := false.B
 //   }
-}
 
-class RxModule extends Module {
-  val io = IO(new Bundle {
-    val busy = Input(Bool())
-    val valid = Input(Bool())
-    val data = Input(UInt(8.W))
-    val ready = Output(Bool())
-  })
 
-  val readyReg = RegInit(false.B)
+// class RxModule extends Module {
+//   val io = IO(new Bundle {
+//     val busy = Input(Bool())
+//     val valid = Input(Bool())
+//     val data = Input(UInt(8.W))
+//     val ready = Output(Bool())
+//   })
 
-  when(io.busy) {
-    readyReg := 0.B
-  }.otherwise {
-    readyReg := 1.B
-  }
+//   val readyReg = RegInit(false.B)
 
-  io.ready := readyReg
-}
+//   when(io.busy) {
+//     readyReg := 0.B
+//   }.otherwise {
+//     readyReg := 1.B
+//   }
 
-class TxRxStateMachine extends Module {
-  val io = IO(new Bundle {
-    val tx = Input(Bool())
-    val busy = Input(Bool())
-    val valid = Output(Bool())
-    val data = Output(UInt(8.W))
-    val ready = Output(Bool())
-  })
+//   io.ready := readyReg
+// }
 
-  val txModule = Module(new TxModule)
-  val rxModule = Module(new RxModule)
+// class TxRxStateMachine extends Module {
+//   val io = IO(new Bundle {
+//     val tx = Input(Bool())
+//     val busy = Input(Bool())
+//     val valid = Output(Bool())
+//     val data = Output(UInt(8.W))
+//     val ready = Output(Bool())
+//   })
 
-  txModule.io.tx := io.tx
-  txModule.io.ready := rxModule.io.ready
-  io.valid := txModule.io.valid
-  io.data := txModule.io.data
+//   val txModule = Module(new TxModule)
+//   val rxModule = Module(new RxModule)
 
-  rxModule.io.busy := io.busy
-  rxModule.io.valid := io.valid
-  rxModule.io.data := io.data
-  io.ready := rxModule.io.ready
-}
+//   txModule.io.tx := io.tx
+//   txModule.io.ready := rxModule.io.ready
+//   io.valid := txModule.io.valid
+//   io.data := txModule.io.data
+
+//   rxModule.io.busy := io.busy
+//   rxModule.io.valid := io.valid
+//   rxModule.io.data := io.data
+//   io.ready := rxModule.io.ready
+// }
 
 
 // class Tx extends Module {

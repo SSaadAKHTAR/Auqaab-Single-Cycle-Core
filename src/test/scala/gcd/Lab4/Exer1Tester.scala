@@ -5,19 +5,19 @@ import org.scalatest._
 import chiseltest._
 import chiseltest.experimental.TestOptionBuilder . _
 import scala.util.Random
-import ALUOP1._
-class TestALU  extends FreeSpec with ChiselScalatestTester {
+import ALUOP._
+class TaskTester  extends FreeSpec with ChiselScalatestTester {
 "ALU Test" in {
-test ( new ALU ) { c =>
-// ALU operations
+test ( new ALU3 ) { c =>
+// ALU operations 
 val array_op = Array ( ALU_ADD , ALU_SUB , ALU_AND , ALU_OR , ALU_XOR , ALU_SLT ,
-ALU_SLL , ALU_SLTU , ALU_SRL , ALU_SRA , ALU_COPY_A , ALU_COPY_B , ALU_XXX )
-var count = 0.U
+ALU_SLL , ALU_SLTU , ALU_SRL , ALU_SRA , ALU_COPY_A , ALU_COPY_B , ALU_div, ALU_mul, ALU_Rem, ALU_XXX )
+
 for ( i <- 0 until 100) {
 println("i am execued ")
-val src_a = Random.nextInt(5555555) & 0xFFFFFFFFL
-val src_b = Random.nextInt(5555555) & 0xFFFFFFFFL
-val opr = Random . nextInt (12)
+val src_a =Random.nextInt(99999) & 0xFFFFFFFFL
+val src_b = Random.nextInt(99999) & 0xFFFFFFFFL
+val opr = Random.nextInt(15)
 val aluop = array_op ( opr )
 println(opr)
 print("src_a : ")
@@ -40,6 +40,9 @@ case ALU_SRL => src_a >> ( src_b & 0x1F )
 case ALU_SRA => src_a >> ( src_b & 0x1F )
 case ALU_COPY_A => src_a
 case ALU_COPY_B => src_b
+case ALU_div => src_a / src_b
+case ALU_mul => src_a * src_b
+case ALU_Rem => src_a % src_b
 case _ => 0
 }
 print("result : ")
@@ -63,6 +66,8 @@ c . clock . step (2)
 }
 }
 }
+
+
 
 
 
