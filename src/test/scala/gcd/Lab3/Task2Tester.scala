@@ -8,7 +8,7 @@ import chisel3._
 
 class Task2bTester extends FreeSpec with ChiselScalatestTester {
   "imm_gen Tester file" in {
-    test(new ImmdValGen(12)){b =>
+    test(new ImmdValGen){b =>
        b.io.instr.poke("b00000001010000000000000010010011".U)
       //  b.io.opcode.poke("b0000011".U)
        b.clock.step(1)
