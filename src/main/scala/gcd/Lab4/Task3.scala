@@ -27,7 +27,7 @@ trait Config1{
 
 import ALUOP1._
 
-class ALUIO1 extends Bundle with Config {
+class ALUIO1 extends Bundle with Config1 {
     val in_A = Input(UInt(WLEN.W))
     val in_B = Input(UInt(WLEN.W))
     val alu_Op = Input(UInt(ALUOP_SIG_LEN.W))

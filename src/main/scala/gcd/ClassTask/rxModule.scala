@@ -23,4 +23,4 @@ class RxModule extends Module {
     data_reg := io.data
   }
   io.ready := readyReg
-}
+} 

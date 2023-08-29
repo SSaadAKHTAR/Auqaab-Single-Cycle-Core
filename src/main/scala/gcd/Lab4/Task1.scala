@@ -7,10 +7,10 @@ import chisel3 . util . _
 object fn3 {
     val fn_beq = 0.U(3.W)
     val fn_bne = 1.U(3.W)
-    val fn_blt = 4.U(3.W)
-    val fn_bge = 5.U(3.W)
-    val fn_bltu = 6.U(3.W)
-    val fn_bgeu = 7.U(3.W)
+    val fn_blt = 2.U(3.W)
+    val fn_bge = 3.U(3.W)
+    val fn_bltu = 4.U(3.W)
+    val fn_bgeu = 5.U(3.W)
 }
 
 
@@ -45,7 +45,7 @@ when(io.fnct3===fn_beq){
 .elsewhen(io.fnct3===fn_blt){
     when(io.arg_x<io.arg_y){
         io.br_taken:=1.U
-    }
+    } 
     .otherwise{
         io.br_taken:=0.U
     }

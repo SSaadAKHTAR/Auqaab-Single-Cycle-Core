@@ -9,12 +9,12 @@ import chisel3.experimental.BundleLiterals._
 
 class Ex2Tester extends FreeSpec with ChiselScalatestTester {
   "lab5 Tester file" in {
-    test(new eMux(UInt(16.W))){a =>
+    test(new eMux(UInt(32.W))){a =>
         a.io.in1.poke(20.U)
         a.io.in2.poke(12.U)
-        a.io.sel.poke(0.B)
-        a.io.out.expect(12.U)
-        
+        a.io.sel.poke(1.B)
+        a.io.out.expect(20.U)
+         
     a.clock.step(1)
 
     }

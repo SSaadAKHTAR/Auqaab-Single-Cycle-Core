@@ -16,6 +16,6 @@ class Ex1Tester extends FreeSpec with ChiselScalatestTester {
         a.io.alu_out.expect(2.U)
     a.clock.step(1)
 
-    }
+    } 
   }
 }
