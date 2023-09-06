@@ -1,4 +1,4 @@
-package Lab5
+package gcd.Lab5
 
 import chisel3 . _
 // class definition with function as parameter

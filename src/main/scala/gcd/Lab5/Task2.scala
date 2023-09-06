@@ -1,4 +1,4 @@
-package Lab5
+package gcd.Lab5
 
 import chisel3 . _
 import chisel3 . util . _
@@ -10,7 +10,7 @@ class dataPackets [ T <: Data ]( gen : T ) extends Bundle{
     val address_field = Input(UInt(10.W))
 
 }
-class Router [ T <: Data ]( gen1 : T ) extends Module {
+class Router [ P <: Data ]( gen1 : P ) extends Module {
     val io = IO( new Bundle{
         val in = Input(new dataPackets(gen1))
         val out = Output(new dataPackets(gen1))})
