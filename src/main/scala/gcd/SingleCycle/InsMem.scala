@@ -11,7 +11,7 @@ class InstMem ( initFile : String ) extends Module  {
 val io = IO (new InstMemIO )
 // INST_MEM_LEN in Bytes or INST_MEM_LEN / 4 in words
 val imem = Mem ( 32 , UInt ( 32 . W ) )
-loadMemoryFromFile ( imem , initFile )
+loadMemoryFromFile ( imem , initFile ) 
 io . inst := imem ( io . addr / 4. U ) 
 }
 

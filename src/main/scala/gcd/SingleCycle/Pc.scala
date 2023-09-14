@@ -8,6 +8,7 @@ class ProgramCounter extends Module{
     })
     val calNewAddr = RegInit(0.U(32.W))
     io.new_addr := calNewAddr
+    
     calNewAddr:= calNewAddr+4.U
     
 }
