@@ -6,8 +6,8 @@ import chisel3. util . _
 class Branch_Control extends Module{
     val io=IO(new Bundle{
         val fun3 =Input(UInt(3.W))
-        val ina = Input(UInt(32.W))
-        val inb = Input(UInt(32.W))
+        val ina = Input(SInt(32.W))
+        val inb = Input(SInt(32.W))
         val br_taken = Output(Bool())
     })
     io.br_taken:=0.B
@@ -22,7 +22,7 @@ class Branch_Control extends Module{
 
         }
         is(1.U){
-            when(io.ina=/=io.inb){
+            when(io.ina =/= io.inb){
                 io.br_taken:=1.B
             }
             .otherwise{

@@ -10,17 +10,10 @@ val immd_se = Output ( UInt (32. W ) )
 class ImmdValGen1 extends Module {
 val io = IO (new ImmdValGen ) 
 // Start coding here
- val x=WireInit(io.imm)
- val immFill = Wire(UInt(20.W))
 
-when(x(11)){
-    immFill :=  Fill(20,"b1".U)
-}
-.otherwise{
-    immFill := Fill(20,"b0".U)
-}
 
-io.immd_se := Cat(immFill , x) 
+
+io.immd_se := Cat(Fill(19,io.imm(11)) , io.imm)
 
 
 

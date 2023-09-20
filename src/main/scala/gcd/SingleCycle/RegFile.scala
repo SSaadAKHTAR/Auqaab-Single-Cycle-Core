@@ -9,16 +9,16 @@ val io = IO (new Bundle {
 val rd =Input (UInt(5.W))
 val rs1 = Input (UInt(5.W))
 val rs2 = Input (UInt(5.W))
-val Rs1 = Output (UInt(32.W))
-val Rs2 = Output (UInt(32.W)) 
+val Rs1 = Output (SInt(32.W))
+val Rs2 = Output (SInt(32.W)) 
 val wr = Input (Bool())
-val Rd = Input (UInt(32.W)) 
+val Rd = Input (SInt(32.W)) 
 // val chk = Output(SInt(32.W))
 })
 
-val Reg =  Mem (32 , UInt (32. W)) 
-io.Rs1 := 0.U
-io.Rs2 := 0.U
+val Reg =  Mem (32 , SInt (32. W)) 
+io.Rs1 := 0.S
+io.Rs2 := 0.S
 
 
 when(io.wr && io.rd=/=0.U){

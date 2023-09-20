@@ -20,22 +20,22 @@ object alu_op{
 import  alu_op._
 
 class IOBundle extends Bundle  {
-    val in_A = Input(UInt(32.W))
-    val in_B = Input(UInt(32.W))
+    val in_A = Input(SInt(32.W))
+    val in_B = Input(SInt(32.W))
     val alu_op = Input(UInt(4.W))
-    val out = Output(UInt(32.W))
+    val out = Output(SInt(32.W))
     // val sum = Output(UInt(32.W))
 }
 class ALUS extends Module{
     val io = IO(new IOBundle)
     val sum = io . in_A + Mux( io.alu_op(0) , (-io .in_B) , io.in_B )
     val shamt = io . in_B (4 ,0) . asUInt
-    val shin = Mux(io.alu_op(3), io.in_A , Reverse(io.in_A))
+    val shin = Mux(io.alu_op(3), io.in_A.asUInt , Reverse(io.in_A.asUInt()))
     val shiftr = (Cat(io.alu_op(0) && shin(32-1), shin).asSInt >> shamt)(32-1,0)
     val shiftl = Reverse(shiftr)
 
 
-    io.out := 0.U
+    io.out := 0.S
     switch ( io.alu_op ){
     is (alu_add){
         io.out:=sum
@@ -45,30 +45,31 @@ class ALUS extends Module{
     }
     is (alu_Slt){
         when(io.in_A.asSInt < io.in_B.asSInt()){
-            io.out := 1.U
+            io.out := 1.S
         }
         .otherwise{
-            io.out := 0.U
+            io.out := 0.S
 
         }
     }
     is (alu_Sltu){
         when(io.in_A.asUInt() < io.in_B.asUInt()){
-            io.out := 1.U
+            io.out := 1.S
         }
         .otherwise{
-            io.out := 0.U
+            io.out := 0.S
 
         }
     }
     is (alu_Sra){
-        io.out:=shiftr
+        io.out:=shiftr.asSInt()
     }
     is (alu_Srl){
-        io.out:=shiftr
+        io.out:=shiftr.asSInt
     }
     is (alu_Sll){
-        io.out:= shiftl
+        
+        io.out:= shiftl.asSInt()
     }
     is (alu_And){
         io.out:=( io . in_A & io . in_B )

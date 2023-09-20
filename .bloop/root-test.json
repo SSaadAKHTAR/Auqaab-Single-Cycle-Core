@@ -2,57 +2,57 @@
     "version": "1.4.0",
     "project": {
         "name": "root-test",
-        "directory": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey",
-        "workspaceDir": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey",
+        "directory": "/home/saad/Desktop/Scala-Chisel-Learning-Journey",
+        "workspaceDir": "/home/saad/Desktop/Scala-Chisel-Learning-Journey",
         "sources": [
-            "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\src\\test\\scala",
-            "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\src\\test\\scala-2.12",
-            "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\src\\test\\scala-2",
-            "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\src\\test\\java",
-            "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\target\\scala-2.12\\src_managed\\test"
+            "/home/saad/Desktop/Scala-Chisel-Learning-Journey/src/test/scala",
+            "/home/saad/Desktop/Scala-Chisel-Learning-Journey/src/test/scala-2.12",
+            "/home/saad/Desktop/Scala-Chisel-Learning-Journey/src/test/scala-2",
+            "/home/saad/Desktop/Scala-Chisel-Learning-Journey/src/test/java",
+            "/home/saad/Desktop/Scala-Chisel-Learning-Journey/target/scala-2.12/src_managed/test"
         ],
         "dependencies": [
             "root"
         ],
         "classpath": [
-            "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\.bloop\\root\\scala-2.12\\classes",
-            "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.12.13\\scala-library-2.12.13.jar",
-            "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\edu\\berkeley\\cs\\chisel3_2.12\\3.4.3\\chisel3_2.12-3.4.3.jar",
-            "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\edu\\berkeley\\cs\\chiseltest_2.12\\0.3.3\\chiseltest_2.12-0.3.3.jar",
-            "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\edu\\berkeley\\cs\\chisel3-macros_2.12\\3.4.3\\chisel3-macros_2.12-3.4.3.jar",
-            "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\edu\\berkeley\\cs\\chisel3-core_2.12\\3.4.3\\chisel3-core_2.12-3.4.3.jar",
-            "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-reflect\\2.12.13\\scala-reflect-2.12.13.jar",
-            "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\scopt\\scopt_2.12\\3.7.1\\scopt_2.12-3.7.1.jar",
-            "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest_2.12\\3.0.8\\scalatest_2.12-3.0.8.jar",
-            "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\utest_2.12\\0.6.7\\utest_2.12-0.6.7.jar",
-            "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\edu\\berkeley\\cs\\treadle_2.12\\1.3.3\\treadle_2.12-1.3.3.jar",
-            "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\edu\\berkeley\\cs\\firrtl_2.12\\1.4.3\\firrtl_2.12-1.4.3.jar",
-            "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalactic\\scalactic_2.12\\3.0.8\\scalactic_2.12-3.0.8.jar",
-            "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-xml_2.12\\1.2.0\\scala-xml_2.12-1.2.0.jar",
-            "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\test-interface\\1.0\\test-interface-1.0.jar",
-            "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\portable-scala\\portable-scala-reflect_2.12\\0.1.0\\portable-scala-reflect_2.12-0.1.0.jar",
-            "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-jline\\2.12.1\\scala-jline-2.12.1.jar",
-            "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\json4s\\json4s-native_2.12\\3.6.9\\json4s-native_2.12-3.6.9.jar",
-            "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\antlr\\antlr4-runtime\\4.7.1\\antlr4-runtime-4.7.1.jar",
-            "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\protobuf\\protobuf-java\\3.9.0\\protobuf-java-3.9.0.jar",
-            "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\net\\jcazevedo\\moultingyaml_2.12\\0.4.2\\moultingyaml_2.12-0.4.2.jar",
-            "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\commons\\commons-text\\1.8\\commons-text-1.8.jar",
-            "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\fusesource\\jansi\\jansi\\1.11\\jansi-1.11.jar",
-            "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\json4s\\json4s-core_2.12\\3.6.9\\json4s-core_2.12-3.6.9.jar",
-            "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\nscala-time\\nscala-time_2.12\\2.22.0\\nscala-time_2.12-2.22.0.jar",
-            "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\yaml\\snakeyaml\\1.26\\snakeyaml-1.26.jar",
-            "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\commons\\commons-lang3\\3.9\\commons-lang3-3.9.jar",
-            "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\json4s\\json4s-ast_2.12\\3.6.9\\json4s-ast_2.12-3.6.9.jar",
-            "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\json4s\\json4s-scalap_2.12\\3.6.9\\json4s-scalap_2.12-3.6.9.jar",
-            "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\thoughtworks\\paranamer\\paranamer\\2.8\\paranamer-2.8.jar",
-            "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\joda-time\\joda-time\\2.10.1\\joda-time-2.10.1.jar",
-            "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\joda\\joda-convert\\2.2.0\\joda-convert-2.2.0.jar"
+            "/home/saad/Desktop/Scala-Chisel-Learning-Journey/.bloop/root/scala-2.12/classes",
+            "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.13/scala-library-2.12.13.jar",
+            "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/edu/berkeley/cs/chisel3_2.12/3.4.3/chisel3_2.12-3.4.3.jar",
+            "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/edu/berkeley/cs/chiseltest_2.12/0.3.3/chiseltest_2.12-0.3.3.jar",
+            "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/edu/berkeley/cs/chisel3-macros_2.12/3.4.3/chisel3-macros_2.12-3.4.3.jar",
+            "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/edu/berkeley/cs/chisel3-core_2.12/3.4.3/chisel3-core_2.12-3.4.3.jar",
+            "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.13/scala-reflect-2.12.13.jar",
+            "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/scopt/scopt_2.12/3.7.1/scopt_2.12-3.7.1.jar",
+            "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_2.12/3.0.8/scalatest_2.12-3.0.8.jar",
+            "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/utest_2.12/0.6.7/utest_2.12-0.6.7.jar",
+            "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/edu/berkeley/cs/treadle_2.12/1.3.3/treadle_2.12-1.3.3.jar",
+            "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/edu/berkeley/cs/firrtl_2.12/1.4.3/firrtl_2.12-1.4.3.jar",
+            "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.12/3.0.8/scalactic_2.12-3.0.8.jar",
+            "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.2.0/scala-xml_2.12-1.2.0.jar",
+            "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/test-interface/1.0/test-interface-1.0.jar",
+            "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/portable-scala/portable-scala-reflect_2.12/0.1.0/portable-scala-reflect_2.12-0.1.0.jar",
+            "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-jline/2.12.1/scala-jline-2.12.1.jar",
+            "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-native_2.12/3.6.9/json4s-native_2.12-3.6.9.jar",
+            "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.7.1/antlr4-runtime-4.7.1.jar",
+            "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.9.0/protobuf-java-3.9.0.jar",
+            "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/net/jcazevedo/moultingyaml_2.12/0.4.2/moultingyaml_2.12-0.4.2.jar",
+            "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-text/1.8/commons-text-1.8.jar",
+            "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.11/jansi-1.11.jar",
+            "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-core_2.12/3.6.9/json4s-core_2.12-3.6.9.jar",
+            "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/nscala-time/nscala-time_2.12/2.22.0/nscala-time_2.12-2.22.0.jar",
+            "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/yaml/snakeyaml/1.26/snakeyaml-1.26.jar",
+            "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9.jar",
+            "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-ast_2.12/3.6.9/json4s-ast_2.12-3.6.9.jar",
+            "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-scalap_2.12/3.6.9/json4s-scalap_2.12-3.6.9.jar",
+            "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.jar",
+            "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/joda-time/joda-time/2.10.1/joda-time-2.10.1.jar",
+            "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/joda/joda-convert/2.2.0/joda-convert-2.2.0.jar"
         ],
-        "out": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\.bloop\\root",
-        "classesDir": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\.bloop\\root\\scala-2.12\\test-classes",
+        "out": "/home/saad/Desktop/Scala-Chisel-Learning-Journey/.bloop/root",
+        "classesDir": "/home/saad/Desktop/Scala-Chisel-Learning-Journey/.bloop/root/scala-2.12/test-classes",
         "resources": [
-            "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\src\\test\\resources",
-            "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\target\\scala-2.12\\resource_managed\\test"
+            "/home/saad/Desktop/Scala-Chisel-Learning-Journey/src/test/resources",
+            "/home/saad/Desktop/Scala-Chisel-Learning-Journey/target/scala-2.12/resource_managed/test"
         ],
         "scala": {
             "organization": "org.scala-lang",
@@ -65,16 +65,16 @@
                 "-feature",
                 "-Xcheckinit",
                 "-P:chiselplugin:useBundlePlugin",
-                "-Xplugin:C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\edu\\berkeley\\cs\\chisel3-plugin_2.12.13\\3.4.3\\chisel3-plugin_2.12.13-3.4.3.jar",
-                "-Xplugin:C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalamacros\\paradise_2.12.13\\2.1.1\\paradise_2.12.13-2.1.1.jar"
+                "-Xplugin:/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/edu/berkeley/cs/chisel3-plugin_2.12.13/3.4.3/chisel3-plugin_2.12.13-3.4.3.jar",
+                "-Xplugin:/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalamacros/paradise_2.12.13/2.1.1/paradise_2.12.13-2.1.1.jar"
             ],
             "jars": [
-                "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-compiler\\2.12.13\\scala-compiler-2.12.13.jar",
-                "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.12.13\\scala-library-2.12.13.jar",
-                "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-reflect\\2.12.13\\scala-reflect-2.12.13.jar",
-                "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-xml_2.12\\1.0.6\\scala-xml_2.12-1.0.6.jar",
-                "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\jline\\jline\\2.14.6\\jline-2.14.6.jar",
-                "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\fusesource\\jansi\\jansi\\1.12\\jansi-1.12.jar"
+                "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.13/scala-library-2.12.13.jar",
+                "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.13/scala-compiler-2.12.13.jar",
+                "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.13/scala-reflect-2.12.13.jar",
+                "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.6/scala-xml_2.12-1.0.6.jar",
+                "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/jline/jline/2.14.6/jline-2.14.6.jar",
+                "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.12/jansi-1.12.jar"
             ],
             "setup": {
                 "order": "mixed",
@@ -118,6 +118,26 @@
                     "names": [
                         "com.novocode.junit.JUnitFramework"
                     ]
+                },
+                {
+                    "names": [
+                        "munit.Framework"
+                    ]
+                },
+                {
+                    "names": [
+                        "zio.test.sbt.ZTestFramework"
+                    ]
+                },
+                {
+                    "names": [
+                        "weaver.framework.CatsEffect"
+                    ]
+                },
+                {
+                    "names": [
+                        "hedgehog.sbt.Framework"
+                    ]
                 }
             ],
             "options": {
@@ -132,9 +152,9 @@
         "platform": {
             "name": "jvm",
             "config": {
-                "home": "C:\\Program Files (x86)\\Java\\jre1.8.0_341",
+                "home": "/usr/lib/jvm/java-11-openjdk-amd64",
                 "options": [
-                    "-Duser.dir=C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey"
+                    "-Duser.dir=/home/saad/Desktop/Scala-Chisel-Learning-Journey"
                 ]
             },
             "mainClass": [
@@ -151,12 +171,12 @@
                     "artifacts": [
                         {
                             "name": "scala-library",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.12.13\\scala-library-2.12.13.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.13/scala-library-2.12.13.jar"
                         },
                         {
                             "name": "scala-library",
                             "classifier": "sources",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.12.13\\scala-library-2.12.13-sources.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.13/scala-library-2.12.13-sources.jar"
                         }
                     ]
                 },
@@ -168,12 +188,12 @@
                     "artifacts": [
                         {
                             "name": "chisel3_2.12",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\edu\\berkeley\\cs\\chisel3_2.12\\3.4.3\\chisel3_2.12-3.4.3.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/edu/berkeley/cs/chisel3_2.12/3.4.3/chisel3_2.12-3.4.3.jar"
                         },
                         {
                             "name": "chisel3_2.12",
                             "classifier": "sources",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\edu\\berkeley\\cs\\chisel3_2.12\\3.4.3\\chisel3_2.12-3.4.3-sources.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/edu/berkeley/cs/chisel3_2.12/3.4.3/chisel3_2.12-3.4.3-sources.jar"
                         }
                     ]
                 },
@@ -185,12 +205,12 @@
                     "artifacts": [
                         {
                             "name": "chisel3-macros_2.12",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\edu\\berkeley\\cs\\chisel3-macros_2.12\\3.4.3\\chisel3-macros_2.12-3.4.3.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/edu/berkeley/cs/chisel3-macros_2.12/3.4.3/chisel3-macros_2.12-3.4.3.jar"
                         },
                         {
                             "name": "chisel3-macros_2.12",
                             "classifier": "sources",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\edu\\berkeley\\cs\\chisel3-macros_2.12\\3.4.3\\chisel3-macros_2.12-3.4.3-sources.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/edu/berkeley/cs/chisel3-macros_2.12/3.4.3/chisel3-macros_2.12-3.4.3-sources.jar"
                         }
                     ]
                 },
@@ -202,12 +222,12 @@
                     "artifacts": [
                         {
                             "name": "chisel3-core_2.12",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\edu\\berkeley\\cs\\chisel3-core_2.12\\3.4.3\\chisel3-core_2.12-3.4.3.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/edu/berkeley/cs/chisel3-core_2.12/3.4.3/chisel3-core_2.12-3.4.3.jar"
                         },
                         {
                             "name": "chisel3-core_2.12",
                             "classifier": "sources",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\edu\\berkeley\\cs\\chisel3-core_2.12\\3.4.3\\chisel3-core_2.12-3.4.3-sources.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/edu/berkeley/cs/chisel3-core_2.12/3.4.3/chisel3-core_2.12-3.4.3-sources.jar"
                         }
                     ]
                 },
@@ -219,12 +239,12 @@
                     "artifacts": [
                         {
                             "name": "scala-reflect",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-reflect\\2.12.13\\scala-reflect-2.12.13.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.13/scala-reflect-2.12.13.jar"
                         },
                         {
                             "name": "scala-reflect",
                             "classifier": "sources",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-reflect\\2.12.13\\scala-reflect-2.12.13-sources.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.13/scala-reflect-2.12.13-sources.jar"
                         }
                     ]
                 },
@@ -236,12 +256,12 @@
                     "artifacts": [
                         {
                             "name": "scopt_2.12",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\scopt\\scopt_2.12\\3.7.1\\scopt_2.12-3.7.1.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/scopt/scopt_2.12/3.7.1/scopt_2.12-3.7.1.jar"
                         },
                         {
                             "name": "scopt_2.12",
                             "classifier": "sources",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\scopt\\scopt_2.12\\3.7.1\\scopt_2.12-3.7.1-sources.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/scopt/scopt_2.12/3.7.1/scopt_2.12-3.7.1-sources.jar"
                         }
                     ]
                 },
@@ -253,12 +273,12 @@
                     "artifacts": [
                         {
                             "name": "firrtl_2.12",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\edu\\berkeley\\cs\\firrtl_2.12\\1.4.3\\firrtl_2.12-1.4.3.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/edu/berkeley/cs/firrtl_2.12/1.4.3/firrtl_2.12-1.4.3.jar"
                         },
                         {
                             "name": "firrtl_2.12",
                             "classifier": "sources",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\edu\\berkeley\\cs\\firrtl_2.12\\1.4.3\\firrtl_2.12-1.4.3-sources.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/edu/berkeley/cs/firrtl_2.12/1.4.3/firrtl_2.12-1.4.3-sources.jar"
                         }
                     ]
                 },
@@ -270,12 +290,12 @@
                     "artifacts": [
                         {
                             "name": "antlr4-runtime",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\antlr\\antlr4-runtime\\4.7.1\\antlr4-runtime-4.7.1.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.7.1/antlr4-runtime-4.7.1.jar"
                         },
                         {
                             "name": "antlr4-runtime",
                             "classifier": "sources",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\antlr\\antlr4-runtime\\4.7.1\\antlr4-runtime-4.7.1-sources.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.7.1/antlr4-runtime-4.7.1-sources.jar"
                         }
                     ]
                 },
@@ -287,12 +307,12 @@
                     "artifacts": [
                         {
                             "name": "protobuf-java",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\protobuf\\protobuf-java\\3.9.0\\protobuf-java-3.9.0.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.9.0/protobuf-java-3.9.0.jar"
                         },
                         {
                             "name": "protobuf-java",
                             "classifier": "sources",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\google\\protobuf\\protobuf-java\\3.9.0\\protobuf-java-3.9.0-sources.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/com/google/protobuf/protobuf-java/3.9.0/protobuf-java-3.9.0-sources.jar"
                         }
                     ]
                 },
@@ -304,12 +324,12 @@
                     "artifacts": [
                         {
                             "name": "moultingyaml_2.12",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\net\\jcazevedo\\moultingyaml_2.12\\0.4.2\\moultingyaml_2.12-0.4.2.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/net/jcazevedo/moultingyaml_2.12/0.4.2/moultingyaml_2.12-0.4.2.jar"
                         },
                         {
                             "name": "moultingyaml_2.12",
                             "classifier": "sources",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\net\\jcazevedo\\moultingyaml_2.12\\0.4.2\\moultingyaml_2.12-0.4.2-sources.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/net/jcazevedo/moultingyaml_2.12/0.4.2/moultingyaml_2.12-0.4.2-sources.jar"
                         }
                     ]
                 },
@@ -321,12 +341,12 @@
                     "artifacts": [
                         {
                             "name": "json4s-native_2.12",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\json4s\\json4s-native_2.12\\3.6.9\\json4s-native_2.12-3.6.9.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-native_2.12/3.6.9/json4s-native_2.12-3.6.9.jar"
                         },
                         {
                             "name": "json4s-native_2.12",
                             "classifier": "sources",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\json4s\\json4s-native_2.12\\3.6.9\\json4s-native_2.12-3.6.9-sources.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-native_2.12/3.6.9/json4s-native_2.12-3.6.9-sources.jar"
                         }
                     ]
                 },
@@ -338,12 +358,12 @@
                     "artifacts": [
                         {
                             "name": "commons-text",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\commons\\commons-text\\1.8\\commons-text-1.8.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-text/1.8/commons-text-1.8.jar"
                         },
                         {
                             "name": "commons-text",
                             "classifier": "sources",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\commons\\commons-text\\1.8\\commons-text-1.8-sources.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-text/1.8/commons-text-1.8-sources.jar"
                         }
                     ]
                 },
@@ -355,12 +375,12 @@
                     "artifacts": [
                         {
                             "name": "nscala-time_2.12",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\nscala-time\\nscala-time_2.12\\2.22.0\\nscala-time_2.12-2.22.0.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/nscala-time/nscala-time_2.12/2.22.0/nscala-time_2.12-2.22.0.jar"
                         },
                         {
                             "name": "nscala-time_2.12",
                             "classifier": "sources",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\github\\nscala-time\\nscala-time_2.12\\2.22.0\\nscala-time_2.12-2.22.0-sources.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/nscala-time/nscala-time_2.12/2.22.0/nscala-time_2.12-2.22.0-sources.jar"
                         }
                     ]
                 },
@@ -372,12 +392,12 @@
                     "artifacts": [
                         {
                             "name": "snakeyaml",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\yaml\\snakeyaml\\1.26\\snakeyaml-1.26.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/yaml/snakeyaml/1.26/snakeyaml-1.26.jar"
                         },
                         {
                             "name": "snakeyaml",
                             "classifier": "sources",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\yaml\\snakeyaml\\1.26\\snakeyaml-1.26-sources.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/yaml/snakeyaml/1.26/snakeyaml-1.26-sources.jar"
                         }
                     ]
                 },
@@ -389,12 +409,12 @@
                     "artifacts": [
                         {
                             "name": "json4s-core_2.12",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\json4s\\json4s-core_2.12\\3.6.9\\json4s-core_2.12-3.6.9.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-core_2.12/3.6.9/json4s-core_2.12-3.6.9.jar"
                         },
                         {
                             "name": "json4s-core_2.12",
                             "classifier": "sources",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\json4s\\json4s-core_2.12\\3.6.9\\json4s-core_2.12-3.6.9-sources.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-core_2.12/3.6.9/json4s-core_2.12-3.6.9-sources.jar"
                         }
                     ]
                 },
@@ -406,12 +426,12 @@
                     "artifacts": [
                         {
                             "name": "commons-lang3",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\commons\\commons-lang3\\3.9\\commons-lang3-3.9.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9.jar"
                         },
                         {
                             "name": "commons-lang3",
                             "classifier": "sources",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\apache\\commons\\commons-lang3\\3.9\\commons-lang3-3.9-sources.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9-sources.jar"
                         }
                     ]
                 },
@@ -423,12 +443,12 @@
                     "artifacts": [
                         {
                             "name": "joda-time",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\joda-time\\joda-time\\2.10.1\\joda-time-2.10.1.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/joda-time/joda-time/2.10.1/joda-time-2.10.1.jar"
                         },
                         {
                             "name": "joda-time",
                             "classifier": "sources",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\joda-time\\joda-time\\2.10.1\\joda-time-2.10.1-sources.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/joda-time/joda-time/2.10.1/joda-time-2.10.1-sources.jar"
                         }
                     ]
                 },
@@ -440,12 +460,12 @@
                     "artifacts": [
                         {
                             "name": "joda-convert",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\joda\\joda-convert\\2.2.0\\joda-convert-2.2.0.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/joda/joda-convert/2.2.0/joda-convert-2.2.0.jar"
                         },
                         {
                             "name": "joda-convert",
                             "classifier": "sources",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\joda\\joda-convert\\2.2.0\\joda-convert-2.2.0-sources.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/joda/joda-convert/2.2.0/joda-convert-2.2.0-sources.jar"
                         }
                     ]
                 },
@@ -457,12 +477,12 @@
                     "artifacts": [
                         {
                             "name": "json4s-ast_2.12",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\json4s\\json4s-ast_2.12\\3.6.9\\json4s-ast_2.12-3.6.9.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-ast_2.12/3.6.9/json4s-ast_2.12-3.6.9.jar"
                         },
                         {
                             "name": "json4s-ast_2.12",
                             "classifier": "sources",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\json4s\\json4s-ast_2.12\\3.6.9\\json4s-ast_2.12-3.6.9-sources.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-ast_2.12/3.6.9/json4s-ast_2.12-3.6.9-sources.jar"
                         }
                     ]
                 },
@@ -474,12 +494,12 @@
                     "artifacts": [
                         {
                             "name": "json4s-scalap_2.12",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\json4s\\json4s-scalap_2.12\\3.6.9\\json4s-scalap_2.12-3.6.9.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-scalap_2.12/3.6.9/json4s-scalap_2.12-3.6.9.jar"
                         },
                         {
                             "name": "json4s-scalap_2.12",
                             "classifier": "sources",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\json4s\\json4s-scalap_2.12\\3.6.9\\json4s-scalap_2.12-3.6.9-sources.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/json4s/json4s-scalap_2.12/3.6.9/json4s-scalap_2.12-3.6.9-sources.jar"
                         }
                     ]
                 },
@@ -491,12 +511,12 @@
                     "artifacts": [
                         {
                             "name": "paranamer",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\thoughtworks\\paranamer\\paranamer\\2.8\\paranamer-2.8.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.jar"
                         },
                         {
                             "name": "paranamer",
                             "classifier": "sources",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\thoughtworks\\paranamer\\paranamer\\2.8\\paranamer-2.8-sources.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8-sources.jar"
                         }
                     ]
                 },
@@ -508,12 +528,12 @@
                     "artifacts": [
                         {
                             "name": "scala-library",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.12.13\\scala-library-2.12.13.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.13/scala-library-2.12.13.jar"
                         },
                         {
                             "name": "scala-library",
                             "classifier": "sources",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.12.13\\scala-library-2.12.13-sources.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.13/scala-library-2.12.13-sources.jar"
                         }
                     ]
                 },
@@ -525,12 +545,12 @@
                     "artifacts": [
                         {
                             "name": "chiseltest_2.12",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\edu\\berkeley\\cs\\chiseltest_2.12\\0.3.3\\chiseltest_2.12-0.3.3.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/edu/berkeley/cs/chiseltest_2.12/0.3.3/chiseltest_2.12-0.3.3.jar"
                         },
                         {
                             "name": "chiseltest_2.12",
                             "classifier": "sources",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\edu\\berkeley\\cs\\chiseltest_2.12\\0.3.3\\chiseltest_2.12-0.3.3-sources.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/edu/berkeley/cs/chiseltest_2.12/0.3.3/chiseltest_2.12-0.3.3-sources.jar"
                         }
                     ]
                 },
@@ -542,12 +562,12 @@
                     "artifacts": [
                         {
                             "name": "scalatest_2.12",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest_2.12\\3.0.8\\scalatest_2.12-3.0.8.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_2.12/3.0.8/scalatest_2.12-3.0.8.jar"
                         },
                         {
                             "name": "scalatest_2.12",
                             "classifier": "sources",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalatest\\scalatest_2.12\\3.0.8\\scalatest_2.12-3.0.8-sources.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalatest/scalatest_2.12/3.0.8/scalatest_2.12-3.0.8-sources.jar"
                         }
                     ]
                 },
@@ -559,12 +579,12 @@
                     "artifacts": [
                         {
                             "name": "utest_2.12",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\utest_2.12\\0.6.7\\utest_2.12-0.6.7.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/utest_2.12/0.6.7/utest_2.12-0.6.7.jar"
                         },
                         {
                             "name": "utest_2.12",
                             "classifier": "sources",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\com\\lihaoyi\\utest_2.12\\0.6.7\\utest_2.12-0.6.7-sources.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/utest_2.12/0.6.7/utest_2.12-0.6.7-sources.jar"
                         }
                     ]
                 },
@@ -576,12 +596,12 @@
                     "artifacts": [
                         {
                             "name": "treadle_2.12",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\edu\\berkeley\\cs\\treadle_2.12\\1.3.3\\treadle_2.12-1.3.3.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/edu/berkeley/cs/treadle_2.12/1.3.3/treadle_2.12-1.3.3.jar"
                         },
                         {
                             "name": "treadle_2.12",
                             "classifier": "sources",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\edu\\berkeley\\cs\\treadle_2.12\\1.3.3\\treadle_2.12-1.3.3-sources.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/edu/berkeley/cs/treadle_2.12/1.3.3/treadle_2.12-1.3.3-sources.jar"
                         }
                     ]
                 },
@@ -593,12 +613,12 @@
                     "artifacts": [
                         {
                             "name": "scalactic_2.12",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalactic\\scalactic_2.12\\3.0.8\\scalactic_2.12-3.0.8.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.12/3.0.8/scalactic_2.12-3.0.8.jar"
                         },
                         {
                             "name": "scalactic_2.12",
                             "classifier": "sources",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scalactic\\scalactic_2.12\\3.0.8\\scalactic_2.12-3.0.8-sources.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalactic/scalactic_2.12/3.0.8/scalactic_2.12-3.0.8-sources.jar"
                         }
                     ]
                 },
@@ -610,12 +630,12 @@
                     "artifacts": [
                         {
                             "name": "scala-xml_2.12",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-xml_2.12\\1.2.0\\scala-xml_2.12-1.2.0.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.2.0/scala-xml_2.12-1.2.0.jar"
                         },
                         {
                             "name": "scala-xml_2.12",
                             "classifier": "sources",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-xml_2.12\\1.2.0\\scala-xml_2.12-1.2.0-sources.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.2.0/scala-xml_2.12-1.2.0-sources.jar"
                         }
                     ]
                 },
@@ -627,12 +647,12 @@
                     "artifacts": [
                         {
                             "name": "test-interface",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\test-interface\\1.0\\test-interface-1.0.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/test-interface/1.0/test-interface-1.0.jar"
                         },
                         {
                             "name": "test-interface",
                             "classifier": "sources",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-sbt\\test-interface\\1.0\\test-interface-1.0-sources.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/test-interface/1.0/test-interface-1.0-sources.jar"
                         }
                     ]
                 },
@@ -644,12 +664,12 @@
                     "artifacts": [
                         {
                             "name": "portable-scala-reflect_2.12",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\portable-scala\\portable-scala-reflect_2.12\\0.1.0\\portable-scala-reflect_2.12-0.1.0.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/portable-scala/portable-scala-reflect_2.12/0.1.0/portable-scala-reflect_2.12-0.1.0.jar"
                         },
                         {
                             "name": "portable-scala-reflect_2.12",
                             "classifier": "sources",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\portable-scala\\portable-scala-reflect_2.12\\0.1.0\\portable-scala-reflect_2.12-0.1.0-sources.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/portable-scala/portable-scala-reflect_2.12/0.1.0/portable-scala-reflect_2.12-0.1.0-sources.jar"
                         }
                     ]
                 },
@@ -661,12 +681,12 @@
                     "artifacts": [
                         {
                             "name": "scala-jline",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-jline\\2.12.1\\scala-jline-2.12.1.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-jline/2.12.1/scala-jline-2.12.1.jar"
                         },
                         {
                             "name": "scala-jline",
                             "classifier": "sources",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\modules\\scala-jline\\2.12.1\\scala-jline-2.12.1-sources.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-jline/2.12.1/scala-jline-2.12.1-sources.jar"
                         }
                     ]
                 },
@@ -678,12 +698,12 @@
                     "artifacts": [
                         {
                             "name": "jansi",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\fusesource\\jansi\\jansi\\1.11\\jansi-1.11.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.11/jansi-1.11.jar"
                         },
                         {
                             "name": "jansi",
                             "classifier": "sources",
-                            "path": "C:\\Users\\pc\\Desktop\\New folder\\Scala-Chisel-Learning-Journey\\null\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\fusesource\\jansi\\jansi\\1.11\\jansi-1.11-sources.jar"
+                            "path": "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.11/jansi-1.11-sources.jar"
                         }
                     ]
                 }

@@ -9,8 +9,8 @@ class BranchTester  extends FreeSpec with ChiselScalatestTester {
 "Branch control Tester" in{
     test ( new Branch_Control ) { c =>
         c.io.fun3.poke(0.U)
-        c.io.ina.poke(9.U)
-        c.io.inb.poke(8.U)
+        c.io.ina.poke(9.S)
+        c.io.inb.poke(8.S)
         c.clock.step()
         c.io.br_taken.expect(0.B)
 

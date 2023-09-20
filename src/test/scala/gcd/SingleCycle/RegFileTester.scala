@@ -14,11 +14,11 @@ class Reg_FileTester extends FreeSpec with ChiselScalatestTester {
         a.io.rs1.poke(2.U)
         a.io.rs2.poke(3.U)
         a.io.wr.poke(1.B)
-        a.io.Rd.poke(28.U)
+        a.io.Rd.poke(28.S)
         a.clock.step()
         // a.io.chk.expect(28.S)
-        a.io.Rs1.expect(0.U)
-        a.io.Rs2.expect(0.U)
+        a.io.Rs1.expect(0.S)
+        a.io.Rs2.expect(0.S)
        
         
       
