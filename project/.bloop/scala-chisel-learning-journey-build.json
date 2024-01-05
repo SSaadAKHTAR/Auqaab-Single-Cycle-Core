@@ -2,15 +2,15 @@
     "version": "1.4.0",
     "project": {
         "name": "scala-chisel-learning-journey-build",
-        "directory": "/home/saad/Desktop/Scala-Chisel-Learning-Journey/project",
-        "workspaceDir": "/home/saad/Desktop/Scala-Chisel-Learning-Journey/project",
+        "directory": "/home/saad/Desktop/Single cycle/Scala-Chisel-Learning-Journey/project",
+        "workspaceDir": "/home/saad/Desktop/Single cycle/Scala-Chisel-Learning-Journey/project",
         "sources": [
-            "/home/saad/Desktop/Scala-Chisel-Learning-Journey/project/src/main/scala",
-            "/home/saad/Desktop/Scala-Chisel-Learning-Journey/project/src/main/scala-2.12",
-            "/home/saad/Desktop/Scala-Chisel-Learning-Journey/project/src/main/scala-2",
-            "/home/saad/Desktop/Scala-Chisel-Learning-Journey/project/src/main/java",
-            "/home/saad/Desktop/Scala-Chisel-Learning-Journey/project/src/main/scala-sbt-1.0",
-            "/home/saad/Desktop/Scala-Chisel-Learning-Journey/project/target/scala-2.12/sbt-1.0/src_managed/main"
+            "/home/saad/Desktop/Single cycle/Scala-Chisel-Learning-Journey/project/src/main/scala",
+            "/home/saad/Desktop/Single cycle/Scala-Chisel-Learning-Journey/project/src/main/scala-2.12",
+            "/home/saad/Desktop/Single cycle/Scala-Chisel-Learning-Journey/project/src/main/scala-2",
+            "/home/saad/Desktop/Single cycle/Scala-Chisel-Learning-Journey/project/src/main/java",
+            "/home/saad/Desktop/Single cycle/Scala-Chisel-Learning-Journey/project/src/main/scala-sbt-1.0",
+            "/home/saad/Desktop/Single cycle/Scala-Chisel-Learning-Journey/project/target/scala-2.12/sbt-1.0/src_managed/main"
         ],
         "dependencies": [
             
@@ -103,11 +103,11 @@
             "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar",
             "/home/saad/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.2/config-1.4.2.jar"
         ],
-        "out": "/home/saad/Desktop/Scala-Chisel-Learning-Journey/project/.bloop/scala-chisel-learning-journey-build",
-        "classesDir": "/home/saad/Desktop/Scala-Chisel-Learning-Journey/project/.bloop/scala-chisel-learning-journey-build/scala-2.12/sbt-1.0/classes",
+        "out": "/home/saad/Desktop/Single cycle/Scala-Chisel-Learning-Journey/project/.bloop/scala-chisel-learning-journey-build",
+        "classesDir": "/home/saad/Desktop/Single cycle/Scala-Chisel-Learning-Journey/project/.bloop/scala-chisel-learning-journey-build/scala-2.12/sbt-1.0/classes",
         "resources": [
-            "/home/saad/Desktop/Scala-Chisel-Learning-Journey/project/src/main/resources",
-            "/home/saad/Desktop/Scala-Chisel-Learning-Journey/project/target/scala-2.12/sbt-1.0/resource_managed/main"
+            "/home/saad/Desktop/Single cycle/Scala-Chisel-Learning-Journey/project/src/main/resources",
+            "/home/saad/Desktop/Single cycle/Scala-Chisel-Learning-Journey/project/target/scala-2.12/sbt-1.0/resource_managed/main"
         ],
         "scala": {
             "organization": "org.scala-lang",
@@ -214,7 +214,7 @@
             "config": {
                 "home": "/usr/lib/jvm/java-11-openjdk-amd64",
                 "options": [
-                    "-Duser.dir=/home/saad/Desktop/Scala-Chisel-Learning-Journey/project"
+                    "-Duser.dir=/home/saad/Desktop/Single cycle/Scala-Chisel-Learning-Journey/project"
                 ]
             },
             "mainClass": [

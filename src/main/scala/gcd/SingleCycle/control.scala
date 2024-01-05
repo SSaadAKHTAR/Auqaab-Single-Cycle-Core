@@ -46,16 +46,45 @@ class contolUnit extends Module{
     io.br_fun3:=0.U
     io.lform:=0.B
     io.mem_r_en:=0.B
-    
-    
 
-     val op=WireInit(io.instruction(6,0))
+    val op =WireInit(io.instruction(6,0))
      val f3 = WireInit(io.instruction(14,12))
      val f7 = WireInit(io.instruction(31,25))
      val Rd = WireInit(io.instruction(11,7))
      val Rs1 = WireInit(io.instruction(19,15))
      val Rs2 = WireInit(io.instruction(24,20))
      val imm = WireInit(io.instruction(31,20))
+
+     when(branch || jalf || jalrf){
+      f3 := 0.U
+      f7 := 0.U
+      Rd := 0.U      
+      Rs1 := 0.U
+      Rs2 := 0.U
+      imm := 0.U
+     }
+     .otherwise{
+      op :=(io.instruction(6,0))
+      f3 := (io.instruction(14,12))
+      f7 := (io.instruction(31,25))
+      Rd := (io.instruction(11,7))
+      Rs1 := (io.instruction(19,15))
+      Rs2 := (io.instruction(24,20))
+      imm := (io.instruction(31,20))
+     }
+
+    
+
+    val branch = RegInit(0.B)
+     branch:=io.bform
+     val jalf = RegInit(0.B)
+     jalf:=io.Jalform
+     val jalrf =RegInit(0.B)
+     jalrf:=io.jalrform
+
+
+
+     
      io.rform:=0.B
      io.iform:=0.B
      io.sform:=0.B
@@ -219,6 +248,12 @@ class contolUnit extends Module{
       io.br_fun3:=0.U
 
      }
+     
+     
+
+
+
+
     }
    
    //   io.aluop:= fn3_7

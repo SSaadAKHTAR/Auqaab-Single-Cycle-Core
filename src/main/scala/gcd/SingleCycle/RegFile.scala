@@ -16,23 +16,25 @@ val Rd = Input (SInt(32.W))
 // val chk = Output(SInt(32.W))
 })
 
-val Reg =  Mem (32 , SInt (32. W)) 
+val Reg2 =  Reg(Vec(32 , SInt (32. W)))  
 io.Rs1 := 0.S
 io.Rs2 := 0.S
+
+Reg2(0) := 0.S
 
 
 when(io.wr && io.rd=/=0.U){
 
-Reg(io.rd):= io.Rd
-io.Rs1 := Reg(io.rs1)
-io.Rs2 := Reg(io.rs2)
+Reg2(io.rd):= io.Rd
+io.Rs1 := Reg2(io.rs1)
+io.Rs2 := Reg2(io.rs2)
 
 }
 .otherwise{
-    io.Rs1 := Reg(io.rs1)
-    io.Rs2 := Reg(io.rs2)
+    io.Rs1 := Reg2(io.rs1)
+    io.Rs2 := Reg2(io.rs2)
 }
-// io.chk:= Reg(io.rd)
+// io.chk:= Reg2(io.rd)
 
 
 }
