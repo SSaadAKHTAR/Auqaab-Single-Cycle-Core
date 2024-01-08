@@ -4,8 +4,6 @@ import chisel3.util._
 class DataPath extends Module{
     val io =IO(new Bundle{
         val out = Output(SInt(32.W))
-        val pcout = Output(UInt(32.W))
-        val ins = Input(UInt(32.W))
 
 
     })
@@ -14,11 +12,10 @@ class DataPath extends Module{
     val alu = Module(new ALUS)
     val cu  = Module(new contolUnit)
     val imm = Module(new ImmdValGen1)
-    // val insMem = Module(new InstMem("./src/main/scala/gcd/SingleCycle/imem.txt"))
+    val insMem = Module(new InstMem("./src/main/scala/gcd/SingleCycle/imem.txt"))
     val regFile = Module(new Reg_File)
     val D_Mem = Module(new Datamem)
     val B_control = Module(new Branch_Control)
-    // val Syncmem = Module(new SyncMem("./home/saad/Desktop/Single cycle/Scala-Chisel-Learning-Journey/src/main/scala/gcd/SingleCycle/imem.txt"))
 
     val pc = RegInit(0.U(32.W))
 
@@ -30,16 +27,12 @@ class DataPath extends Module{
     
     // pc := pc + 4.U
     pc:=Mux(cu.io.pcsel,alu.io.out.asUInt(),pc + 4.U)
-    io.pcout:=pc
     
     cu.io.btaken:=B_control.io.br_taken
 
-    // insMem.io.addr := pc
-    // Syncmem.io.add := pc
+    insMem.io.addr := pc
 
-    cu.io.instruction:=io.ins
-    // cu.io.instruction:=Syncmem.io.instOut
-
+    cu.io.instruction:=insMem.io.inst
 
     regFile.io.rd:=cu.io.rd
     regFile.io.rs1:=cu.io.rs1

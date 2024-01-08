@@ -113,10 +113,10 @@ class Datamem extends Module {
         mask(3) := 1.B
 
       }
-      // mask(0) := 1.B
-      // mask(1) := 0.B
-      // mask(2) := 0.B
-      // mask(3) := 0.B
+      mask(0) := 1.B
+      mask(1) := 0.B
+      mask(2) := 0.B
+      mask(3) := 0.B
     memory.write(io.addr(31, 2),data,mask)
     //tempread := memory.read(io.addr(31, 2), 1.B)
     //io.Dout := Cat(tempread(3), tempread(2), tempread(1), tempread(0)).asSInt()
