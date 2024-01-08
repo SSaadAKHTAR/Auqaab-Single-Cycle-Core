@@ -10,7 +10,7 @@ class topModuleTester extends FreeSpec with ChiselScalatestTester{
     "top tester" in{
         test (new TopModule){ a =>
             a.clock.step(250)
-            a.io.datain.poke(3.U)
+            // a.io.datain.poke(3.U)
             a.io.out.expect(0.S)
 
         }

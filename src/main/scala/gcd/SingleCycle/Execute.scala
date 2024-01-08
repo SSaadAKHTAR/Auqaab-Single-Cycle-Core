@@ -55,6 +55,7 @@ class execute extends Module{
         val bra = Output(Bool())
         val jal = Output(Bool())
         val jalr = Output(Bool())
+        val prevBtaken = Output(Bool())
     })
 
     val alu = Module(new ALUS)
@@ -103,9 +104,7 @@ class execute extends Module{
     io.MemToReg:=io.wr_back
     io.pco:= io.pc_out
 
-
-
-
-
-    
+    // val PrevBTaken = Wire(Bool())
+    io.prevBtaken:=B_control.io.br_taken
+    // io.prevBtaken:=PrevBTaken
 }

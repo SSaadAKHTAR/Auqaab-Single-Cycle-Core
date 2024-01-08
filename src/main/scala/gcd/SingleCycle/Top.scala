@@ -9,11 +9,12 @@ class Top extends Module{
         // val eout = Output(UInt(32.W))
     })
     val TopCore = Module(new TopModule)
-    val syncMem = Module(new InstMem("./src/main/scala/gcd/SingleCycle/imem.txt"))  
+    val syncMem = Module(new InstMem("./src/main/scala/gcd/SingleCycle/imem.txt")) 
+    dontTouch(TopCore.io) 
     io.out:=0.S
     
-    syncMem.io.addr:=Topcore.fetch.io.pc_out
-    TopCore.fetch.io.ins:=syncMem.io.inst
+    syncMem.io.addr:=TopCore.io.pcout
+    TopCore.io.ins:=syncMem.io.inst
     // datapath.io.ins:=io.eout
 
     

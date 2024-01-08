@@ -6,8 +6,15 @@ import _root_.javax.swing.plaf.nimbus.AbstractRegionPainter
 
 class TopModule extends Module{
     val io = IO(new Bundle{
-        val datain = Input(UInt(32.W))
+        // val datain = Input(UInt(32.W))
         val out = Output(SInt(32.W))
+        val pcout = Output(UInt(32.W))
+        val ins = Input(UInt(32.W))
+        val prevIns = Output(UInt(32.W))
+        val bform = Output(Bool())
+        val jal = Output(Bool())
+        val jalr = Output(Bool())
+        val prevBtaken = Output(Bool())
 
     })
     val fetch = Module(new fetch)
@@ -21,16 +28,74 @@ class TopModule extends Module{
     dontTouch(memory.io)
     dontTouch(WriteBack.io)
 
-    //Core b\w fetch and decode
+    io.prevBtaken:=WriteBack.io.br_taken
+
+    val previns = Reg(UInt(32.W))
+    previns:= io.ins
+    io.prevIns:=previns
+
+    val op = WireInit(io.prevIns(6,0))
+    when(op==="b1100011".U){//branch
+        io.bform:=1.B
+        io.jal:=0.B
+        io.jalr:=0.B
+    }
+    .elsewhen(op==="b1101111".U){//Jal 
+        io.bform:=0.B
+        io.jal:=1.B
+        io.jalr:=0.B
+    
+    }
+    .elsewhen(op==="b1100111".U){//jalr
+        io.bform:=0.B
+        io.jal:=0.B
+        io.jalr:=1.B
+    
+    }
+    .otherwise{
+        io.bform:=0.B
+        io.jal:=0.B
+        io.jalr:=0.B
+    }
+
     val IF_IDins  = Reg(UInt(32.W))
-    IF_IDins:=fetch.io.instruction
-    decode.io.ins:=IF_IDins
+    val jump2 = Reg(Bool())
+
+    when(io.bform  || io.jal || io.jalr){
+        IF_IDins:=0.U
+        decode.io.ins:=IF_IDins
+        jump2:=1.B
+
+    }
+    .elsewhen(jump2===1.B){
+        IF_IDins:=0.U
+        decode.io.ins:=IF_IDins
+        jump2:=0.B
+
+    }.otherwise{
+        IF_IDins:=fetch.io.instruction
+        decode.io.ins:=IF_IDins
+
+    }
+    
+        
+
+    
+
+
+    fetch.io.ins:=io.ins
+
+    //Core b\w fetch and decode
+    
+    
     val IF_IDpc = Reg(UInt(32.W))
-    IF_IDpc:= fetch.io.pc_out
+    IF_IDpc:= fetch.io.prevPc_out
     decode.io.pcout:=IF_IDpc
     val IF_IDpc4 = Reg(UInt(32.W))
     IF_IDpc4:= fetch.io.pc4_out
     decode.io.pc4out:=IF_IDpc4
+
+    io.pcout:=fetch.io.pc_out
 
     //core b\w decode and execute
     // val ID_Exiform = Reg(Bool())

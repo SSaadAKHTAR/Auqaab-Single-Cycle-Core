@@ -14,12 +14,15 @@ class fetch extends Module{
         val instruction = Output(UInt(32.W))
         val pc_out = Output (UInt(32.W))
         val pc4_out = Output (UInt(32.W))
+        val prevPc_out = Output(UInt(32.W))
+        val pcselout = Output(Bool())
 
     })
 
-    val pc =RegInit(4.U(32.W))
+    val pc =RegInit(0.U(32.W))
+    // io.prevPc_out:=0.U
     // val SyncMem = Module(new InstMem("/home/saad/Desktop/Single cycle/Scala-Chisel-Learning-Journey/src/main/scala/gcd/SingleCycle/imem.txt"))
-    val op = WireInit(SyncMem.io.inst(6,0))
+    // val op = WireInit(SyncMem.io.inst(6,0))
     // when(op==="b1100011".U){
     //     io.bform:=1.B
     //     io.jal:=0.B
@@ -49,17 +52,24 @@ class fetch extends Module{
         // io.pc_out:=install
         // SyncMem.io.addr:=install
         // pc:=install
+        val prevpcout = Reg(UInt(32.W))
+        prevpcout:=pc
+        io.prevPc_out:=prevpcout
     
     
         io.pc_out:= pc
         // SyncMem.io.addr:= pc
         
 
+    // when(io.bform || io.jal || io.jalr){
+    //     pc:=Mux(io.pcsel,io.aluout.asUInt()+4.U,pc + 4.U)
+
+    // }
+    io.pcselout:=io.pcsel
+    pc:=Mux(io.pcsel,io.aluout.asUInt() ,pc + 4.U)
     
-    pc:=Mux(io.pcsel,io.aluout.asUInt()+4.U,pc + 4.U)
     
-    
-    io.pc4_out:= pc + 4.U
+    io.pc4_out:= prevpcout + 4.U
     
     io.instruction:= io.ins
 }
