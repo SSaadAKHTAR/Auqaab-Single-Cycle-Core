@@ -11,9 +11,10 @@ class TopModule extends Module{
         val pcout = Output(UInt(32.W))
         val ins = Input(UInt(32.W))
         val prevIns = Output(UInt(32.W))
-        val bform = Output(Bool())
-        val jal = Output(Bool())
-        val jalr = Output(Bool())
+        // val bform = Output(Bool())
+        // val jal = Output(Bool())
+        // val jalr = Output(Bool())
+        val pcsel = Output(Bool())
         // val prevBtaken = Output(Bool())
 
     })
@@ -28,55 +29,57 @@ class TopModule extends Module{
     dontTouch(memory.io)
     dontTouch(WriteBack.io)
 
+    io.pcsel:= decode.io.pcsel
+
     // io.prevBtaken:=WriteBack.io.br_taken
 
     val previns = Reg(UInt(32.W))
     previns:= io.ins
     io.prevIns:=previns
 
-    val op = WireInit(io.prevIns(6,0))
-    when(op==="b1100011".U){//branch
-        io.bform:=1.B
-        io.jal:=0.B
-        io.jalr:=0.B
-    }
-    .elsewhen(op==="b1101111".U){//Jal 
-        io.bform:=0.B
-        io.jal:=1.B
-        io.jalr:=0.B
+    // val op = WireInit(io.prevIns(6,0))
+    // when(op==="b1100011".U){//branch
+    //     io.bform:=1.B
+    //     io.jal:=0.B
+    //     io.jalr:=0.B
+    // }
+    // .elsewhen(op==="b1101111".U){//Jal 
+    //     io.bform:=0.B
+    //     io.jal:=1.B
+    //     io.jalr:=0.B
     
-    }
-    .elsewhen(op==="b1100111".U){//jalr
-        io.bform:=0.B
-        io.jal:=0.B
-        io.jalr:=1.B
+    // }
+    // .elsewhen(op==="b1100111".U){//jalr
+    //     io.bform:=0.B
+    //     io.jal:=0.B
+    //     io.jalr:=1.B
     
-    }
-    .otherwise{
-        io.bform:=0.B
-        io.jal:=0.B
-        io.jalr:=0.B
-    }
+    // }
+    // .otherwise{
+    //     io.bform:=0.B
+    //     io.jal:=0.B
+    //     io.jalr:=0.B
+    // }
 
-    val IF_IDins  = Reg(UInt(32.W))
-    val jump2 = Reg(Bool())
+    // val IF_IDins  = Reg(UInt(32.W))
+    // val jump2 = Reg(Bool())
 
-    when(io.bform  || io.jal || io.jalr){
-        IF_IDins:=0.U
-        decode.io.ins:=IF_IDins
-        jump2:=1.B
+    // when(decode.io.pcsel ){
+    //     IF_IDins:=0.U
+    //     decode.io.ins:=IF_IDins
+    //     jump2:=1.B
 
-    }
-    .elsewhen(jump2===1.B){
-        IF_IDins:=0.U
-        decode.io.ins:=IF_IDins
-        jump2:=0.B
+    // }
+    // .elsewhen(jump2===1.B){
+    //     IF_IDins:=0.U
+    //     decode.io.ins:=IF_IDins
+    //     jump2:=0.B
 
-    }.otherwise{
-        IF_IDins:=fetch.io.instruction
-        decode.io.ins:=IF_IDins
+    // }.otherwise{
+    //     IF_IDins:=fetch.io.instruction
+    //     decode.io.ins:=IF_IDins
 
-    }
+    // }
     
         
 
@@ -86,8 +89,9 @@ class TopModule extends Module{
     fetch.io.ins:=io.ins
 
     //Core b\w fetch and decode
-    
-    
+    val IF_IDins  = Reg(UInt(32.W))
+    IF_IDins:=fetch.io.instruction
+    decode.io.ins:=IF_IDins
     val IF_IDpc = Reg(UInt(32.W))
     IF_IDpc:= fetch.io.prevPc_out
     decode.io.pcout:=IF_IDpc

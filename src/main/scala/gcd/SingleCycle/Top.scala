@@ -10,11 +10,15 @@ class Top extends Module{
     })
     val TopCore = Module(new TopModule)
     val syncMem = Module(new InstMem("./src/main/scala/gcd/SingleCycle/imem.txt")) 
+    val check = Module(new check)
     dontTouch(TopCore.io) 
     io.out:=0.S
+
+    check.io.insin := syncMem.io.inst
+    check.io.pcselc := TopCore.io.pcsel
     
-    syncMem.io.addr:=TopCore.io.pcout
-    TopCore.io.ins:=syncMem.io.inst
+    syncMem.io.addr:= TopCore.io.pcout
+    TopCore.io.ins:=    check.io.insout
     // datapath.io.ins:=io.eout
 
     
