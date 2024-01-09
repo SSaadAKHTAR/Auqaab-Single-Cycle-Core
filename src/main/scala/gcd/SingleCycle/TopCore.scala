@@ -14,7 +14,7 @@ class TopModule extends Module{
         val bform = Output(Bool())
         val jal = Output(Bool())
         val jalr = Output(Bool())
-        val prevBtaken = Output(Bool())
+        // val prevBtaken = Output(Bool())
 
     })
     val fetch = Module(new fetch)
@@ -28,7 +28,7 @@ class TopModule extends Module{
     dontTouch(memory.io)
     dontTouch(WriteBack.io)
 
-    io.prevBtaken:=WriteBack.io.br_taken
+    // io.prevBtaken:=WriteBack.io.br_taken
 
     val previns = Reg(UInt(32.W))
     previns:= io.ins
