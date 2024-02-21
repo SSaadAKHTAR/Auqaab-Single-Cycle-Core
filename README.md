@@ -24,24 +24,6 @@ SBT is the most common built tool in the Scala community. You can download it [h
 sudo apt-get install verilator
 ```
 
-### How to get started
-
-Fork this repository on your own individual profiles. After forking clone the repository and run:
-
-```sh
-sbt test
-```
-
-You should see a whole bunch of output that ends with something like the following lines
-```
-[info] Tests: succeeded 1, failed 0, canceled 0, ignored 0, pending 0
-[info] All tests passed.
-[success] Total time: 5 s, completed Dec 16, 2020 12:18:44 PM
-```
-If you see the above then...
-
-### It worked!
-
 You are ready to go. Next step is to go inside the `docs/` folder where you will find the labs to perform.
 
 ### For quick debugging
@@ -50,7 +32,7 @@ If you quickly want to see what verilog is being generated, go to this link  htt
 First of all get started by cloning this repository on your machine.
 
 ```ruby
-git clone https://github.com/syedowaisalishah/Al-Battar-.git
+git clone https://github.com/SSaadAKHTAR/Auqaab-Single-Cycle-Core.git-.git
 ```
 
 Create a .txt file and place the ***hexadecimal*** code of your instructions simulated on ***Venus*** (RISC-V Simulator)\
@@ -69,22 +51,8 @@ Each instruction's hexadecimal code must be on seperate line as following. This 
 ```
 Then perform the following step
 ```
-cd RISCV-single-cycle\main\scala\riscv
+cd Auqaab-Single-Cycle-Core/src/main/scala/gcd/SingleCycle
 ```
-Open **InstructionMem.scala** with this command. You can also manually go into the above path and open the file in your favorite text editor.
-```ruby
-open InstructionMem.scala
-```
-Find the following line
-``` python
-loadMemoryFromFile(mem, "/home/owais/Music/Al-Battar--main/RISCV-single-cycle/src/main/scala/riscv/file.txt")
-```
-Change the .txt file path to match your file that you created above storing your own program instructions. or you can also use this file\
-After setting up the InstructionMem.scala file, go inside the RV32i folder.
-```ruby
-cd Single-Cycle-CPU/RV32i
-```
-
 
 And enter
 ```ruby
@@ -92,11 +60,11 @@ sbt
 ```
 When the terminal changes to this type
 ```ruby
-sbt:RISCV-single-cycle>
+sbt:Auqaab-Single-Cycle-Core>
 ```
 Enter this command
 ```ruby
-sbt:RISCV-single-cycle> testOnly riscv.toptest -- -DwriteVcd=1
+sbt:Auqaab-Single-Cycle-Core>  testOnly SingleCycle.DataPathTester -- -DwriteVcd=1
 ```
 
 After success you will get a folder ***test_run_dir*** on root of your folder. Go into the examples folder inside.\
