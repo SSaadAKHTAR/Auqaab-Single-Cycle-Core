@@ -48,6 +48,7 @@ If you quickly want to see what verilog is being generated, go to this link  htt
 
 ### Test cases 
 #### Program 1
+'''
 addi x5 x0 0
 addi x6 x0 5
 add x8 x6 x5
@@ -109,3 +110,4 @@ lw x16,0x100(x3)
 addi x3,x3,4
 jal x7,end
 break:
+'''
