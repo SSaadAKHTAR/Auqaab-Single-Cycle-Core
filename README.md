@@ -48,8 +48,8 @@ If you quickly want to see what verilog is being generated, go to this link  htt
 
 ### Test cases 
 
-```
 #### Program 1
+```
 addi x5 x0 0
 addi x6 x0 5
 add x8 x6 x5
@@ -60,7 +60,9 @@ beq x5 x6 ANS
 jal LOOP
 ANS: lw x7 100(x0)
 
+```
 #### Program 2
+```
 addi x5 x0 3
 LOOP:
 addi x5 x5 1
@@ -69,7 +71,9 @@ sw x6 100(x5)
 lw x7 100(x5)
 bne x5 x7 LOOP
 
+```
 #### Program 3
+```
 addi x5 x0 0
 addi x7 x0 1
 addi x6 x0 10
@@ -80,8 +84,9 @@ add x5 x0 x7
 add x7 x0 x29
 jal LOOP
 END:
-
+```
 #### Fibonacci Series:
+```
 addi x1,x0,0
 addi x2,x0,1
 addi x10,x0,4
@@ -111,6 +116,4 @@ lw x16,0x100(x3)
 addi x3,x3,4
 jal x7,end
 break:
-
-
 ```
