@@ -47,8 +47,9 @@ You are ready to go. Next step is to go inside the `docs/` folder where you will
 If you quickly want to see what verilog is being generated, go to this link  https://bit.ly/3u3zr0e and write Chisel here.
 
 ### Test cases 
+
+```
 #### Program 1
-bash '''
 addi x5 x0 0
 addi x6 x0 5
 add x8 x6 x5
@@ -110,4 +111,6 @@ lw x16,0x100(x3)
 addi x3,x3,4
 jal x7,end
 break:
-'''
+
+
+```
