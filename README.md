@@ -1,6 +1,7 @@
 Auqaab عقاب
 =======================
 <img src='https://github.com/syedowaisalishah/Al-Battar-/blob/main/Single%20Cycle%20RISC-V%20Core.png' height=600 width=100%>
+
 [![Join the chat at https://gitter.im/merledu/scala-chisel-learning-journey](https://badges.gitter.im/merledu/scala-chisel-learning-journey.svg)](https://gitter.im/merledu/scala-chisel-learning-journey?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 
