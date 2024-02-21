@@ -1,5 +1,6 @@
-Scala Chisel Learning Journey
+Auqaab عقاب
 =======================
+<img src='https://github.com/syedowaisalishah/Al-Battar-/blob/main/Single%20Cycle%20RISC-V%20Core.png' height=600 width=100%>
 
 [![Join the chat at https://gitter.im/merledu/scala-chisel-learning-journey](https://badges.gitter.im/merledu/scala-chisel-learning-journey.svg)](https://gitter.im/merledu/scala-chisel-learning-journey?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -23,28 +24,53 @@ SBT is the most common built tool in the Scala community. You can download it [h
 sudo apt-get install verilator
 ```
 
-### How to get started
-
-Fork this repository on your own individual profiles. After forking clone the repository and run:
-
-```sh
-sbt test
-```
-
-You should see a whole bunch of output that ends with something like the following lines
-```
-[info] Tests: succeeded 1, failed 0, canceled 0, ignored 0, pending 0
-[info] All tests passed.
-[success] Total time: 5 s, completed Dec 16, 2020 12:18:44 PM
-```
-If you see the above then...
-
-### It worked!
-
 You are ready to go. Next step is to go inside the `docs/` folder where you will find the labs to perform.
 
 ### For quick debugging
 If you quickly want to see what verilog is being generated, go to this link  https://bit.ly/3u3zr0e and write Chisel here.
+
+First of all get started by cloning this repository on your machine.
+
+```ruby
+git clone https://github.com/SSaadAKHTAR/Auqaab-Single-Cycle-Core.git-.git
+```
+
+Create a .txt file and place the ***hexadecimal*** code of your instructions simulated on ***Venus*** (RISC-V Simulator)\
+Each instruction's hexadecimal code must be on seperate line as following. This program consists of 9 instructions.
+
+```ruby
+00500113
+00500193
+014000EF
+00120293
+00502023
+00002303
+00628663
+00310233
+00008067
+```
+Then perform the following step
+```
+cd Auqaab-Single-Cycle-Core/src/main/scala/gcd/SingleCycle
+```
+
+And enter
+```ruby
+sbt
+```
+When the terminal changes to this type
+```ruby
+sbt:Auqaab-Single-Cycle-Core>
+```
+Enter this command
+```ruby
+sbt:Auqaab-Single-Cycle-Core>  testOnly SingleCycle.DataPathTester -- -DwriteVcd=1
+```
+
+After success you will get a folder ***test_run_dir*** on root of your folder. Go into the examples folder inside.\
+There you will find the folder named Top. Enter in it and you can find the Top.vcd file which you visualise on **gtkwave** to\
+see your program running.
+
 
 ### Test cases 
 
